@@ -1,0 +1,9 @@
+{
+  "/page": "app/page.js",
+  "/pricing/page": "app/pricing/page.js",
+  "/auth-callback/page": "app/auth-callback/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/[fileid]/page": "app/dashboard/[fileid]/page.js",
+  "/api/trpc/[trpc]/route": "app/api/trpc/[trpc]/route.js",
+  "/api/uploadthing/route": "app/api/uploadthing/route.js"
+}

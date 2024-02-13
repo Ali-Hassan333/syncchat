@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "vendor-chunks/@mantine";
+exports.ids = ["vendor-chunks/@mantine"];
+exports.modules = {
+
+/***/ "(ssr)/./node_modules/@mantine/hooks/esm/use-intersection/use-intersection.mjs":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@mantine/hooks/esm/use-intersection/use-intersection.mjs ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   useIntersection: () => (/* binding */ useIntersection)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* __next_internal_client_entry_do_not_use__ useIntersection auto */ \nfunction useIntersection(options) {\n    const [entry, setEntry] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);\n    const observer = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);\n    const ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)((element)=>{\n        if (observer.current) {\n            observer.current.disconnect();\n            observer.current = null;\n        }\n        if (element === null) {\n            setEntry(null);\n            return;\n        }\n        observer.current = new IntersectionObserver(([_entry])=>{\n            setEntry(_entry);\n        }, options);\n        observer.current.observe(element);\n    }, [\n        options?.rootMargin,\n        options?.root,\n        options?.threshold\n    ]);\n    return {\n        ref,\n        entry\n    };\n}\n //# sourceMappingURL=use-intersection.mjs.map\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvQG1hbnRpbmUvaG9va3MvZXNtL3VzZS1pbnRlcnNlY3Rpb24vdXNlLWludGVyc2VjdGlvbi5tanMiLCJtYXBwaW5ncyI6Ijs7Ozs7cUVBQ3NEO0FBRXRELFNBQVNHLGdCQUFnQkMsT0FBTztJQUM5QixNQUFNLENBQUNDLE9BQU9DLFNBQVMsR0FBR04sK0NBQVFBLENBQUM7SUFDbkMsTUFBTU8sV0FBV04sNkNBQU1BLENBQUM7SUFDeEIsTUFBTU8sTUFBTU4sa0RBQVdBLENBQ3JCLENBQUNPO1FBQ0MsSUFBSUYsU0FBU0csT0FBTyxFQUFFO1lBQ3BCSCxTQUFTRyxPQUFPLENBQUNDLFVBQVU7WUFDM0JKLFNBQVNHLE9BQU8sR0FBRztRQUNyQjtRQUNBLElBQUlELFlBQVksTUFBTTtZQUNwQkgsU0FBUztZQUNUO1FBQ0Y7UUFDQUMsU0FBU0csT0FBTyxHQUFHLElBQUlFLHFCQUFxQixDQUFDLENBQUNDLE9BQU87WUFDbkRQLFNBQVNPO1FBQ1gsR0FBR1Q7UUFDSEcsU0FBU0csT0FBTyxDQUFDSSxPQUFPLENBQUNMO0lBQzNCLEdBQ0E7UUFBQ0wsU0FBU1c7UUFBWVgsU0FBU1k7UUFBTVosU0FBU2E7S0FBVTtJQUUxRCxPQUFPO1FBQUVUO1FBQUtIO0lBQU07QUFDdEI7QUFFMkIsQ0FDM0IsNkNBQTZDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vc3luY2NoYXQvLi9ub2RlX21vZHVsZXMvQG1hbnRpbmUvaG9va3MvZXNtL3VzZS1pbnRlcnNlY3Rpb24vdXNlLWludGVyc2VjdGlvbi5tanM/YTU3MiJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCc7XG5pbXBvcnQgeyB1c2VTdGF0ZSwgdXNlUmVmLCB1c2VDYWxsYmFjayB9IGZyb20gJ3JlYWN0JztcblxuZnVuY3Rpb24gdXNlSW50ZXJzZWN0aW9uKG9wdGlvbnMpIHtcbiAgY29uc3QgW2VudHJ5LCBzZXRFbnRyeV0gPSB1c2VTdGF0ZShudWxsKTtcbiAgY29uc3Qgb2JzZXJ2ZXIgPSB1c2VSZWYobnVsbCk7XG4gIGNvbnN0IHJlZiA9IHVzZUNhbGxiYWNrKFxuICAgIChlbGVtZW50KSA9PiB7XG4gICAgICBpZiAob2JzZXJ2ZXIuY3VycmVudCkge1xuICAgICAgICBvYnNlcnZlci5jdXJyZW50LmRpc2Nvbm5lY3QoKTtcbiAgICAgICAgb2JzZXJ2ZXIuY3VycmVudCA9IG51bGw7XG4gICAgICB9XG4gICAgICBpZiAoZWxlbWVudCA9PT0gbnVsbCkge1xuICAgICAgICBzZXRFbnRyeShudWxsKTtcbiAgICAgICAgcmV0dXJuO1xuICAgICAgfVxuICAgICAgb2JzZXJ2ZXIuY3VycmVudCA9IG5ldyBJbnRlcnNlY3Rpb25PYnNlcnZlcigoW19lbnRyeV0pID0+IHtcbiAgICAgICAgc2V0RW50cnkoX2VudHJ5KTtcbiAgICAgIH0sIG9wdGlvbnMpO1xuICAgICAgb2JzZXJ2ZXIuY3VycmVudC5vYnNlcnZlKGVsZW1lbnQpO1xuICAgIH0sXG4gICAgW29wdGlvbnM/LnJvb3RNYXJnaW4sIG9wdGlvbnM/LnJvb3QsIG9wdGlvbnM/LnRocmVzaG9sZF1cbiAgKTtcbiAgcmV0dXJuIHsgcmVmLCBlbnRyeSB9O1xufVxuXG5leHBvcnQgeyB1c2VJbnRlcnNlY3Rpb24gfTtcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPXVzZS1pbnRlcnNlY3Rpb24ubWpzLm1hcFxuIl0sIm5hbWVzIjpbInVzZVN0YXRlIiwidXNlUmVmIiwidXNlQ2FsbGJhY2siLCJ1c2VJbnRlcnNlY3Rpb24iLCJvcHRpb25zIiwiZW50cnkiLCJzZXRFbnRyeSIsIm9ic2VydmVyIiwicmVmIiwiZWxlbWVudCIsImN1cnJlbnQiLCJkaXNjb25uZWN0IiwiSW50ZXJzZWN0aW9uT2JzZXJ2ZXIiLCJfZW50cnkiLCJvYnNlcnZlIiwicm9vdE1hcmdpbiIsInJvb3QiLCJ0aHJlc2hvbGQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/@mantine/hooks/esm/use-intersection/use-intersection.mjs\n");
+
+/***/ })
+
+};
+;
