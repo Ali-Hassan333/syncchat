@@ -13,11 +13,11 @@ import { useToast } from "./ui/use-toast";
 import { trpc } from "@/app/_trpc/client";
 
 const UploadDropzone = (
-//     {
-//     isSubscribed,
-//   }: {
-//     isSubscribed: boolean
-//   }
+    {
+    isSubscribed,
+  }: {
+    isSubscribed: boolean
+  }
   ) => {
     const router = useRouter()
   
@@ -31,7 +31,7 @@ const UploadDropzone = (
     // handle file uploading
   
     const { startUpload } = useUploadThing(
-      'pdfUploader'
+      isSubscribed ? "proPlanUploader" : "freePlanUploader"
     )
   
     const { mutate: startPolling } = trpc.getFile.useMutation(
@@ -114,7 +114,7 @@ const UploadDropzone = (
                   </p>
                   <p className='text-xs text-zinc-500'>
                     PDF 
-                    {/* (up to {isSubscribed ? "16" : "4"}MB) */}
+                    (up to {isSubscribed ? "16" : "4"}MB)
                   </p>
                 </div>
   
@@ -163,7 +163,7 @@ const UploadDropzone = (
     )
   }
 
-const UploadButton = () => {
+const UploadButton = ({isSubscribed}: {isSubscribed: boolean}) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     return ( 
@@ -177,7 +177,7 @@ const UploadButton = () => {
             </DialogTrigger>
         <DialogContent>
         <UploadDropzone 
-        // isSubscribed={isSubscribed} 
+        isSubscribed={isSubscribed} 
         />
         </DialogContent>
         </Dialog>

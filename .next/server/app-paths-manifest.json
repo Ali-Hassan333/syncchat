@@ -1,9 +1,8 @@
 {
-  "/dashboard/page": "app/dashboard/page.js",
-  "/dashboard/[fileid]/page": "app/dashboard/[fileid]/page.js",
-  "/dashboard/billing/page": "app/dashboard/billing/page.js",
-  "/pricing/page": "app/pricing/page.js",
-  "/api/trpc/[trpc]/route": "app/api/trpc/[trpc]/route.js",
   "/page": "app/page.js",
-  "/api/auth/[kindeAuth]/route": "app/api/auth/[kindeAuth]/route.js"
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/billing/page": "app/dashboard/billing/page.js",
+  "/api/trpc/[trpc]/route": "app/api/trpc/[trpc]/route.js",
+  "/dashboard/[fileid]/page": "app/dashboard/[fileid]/page.js",
+  "/api/uploadthing/route": "app/api/uploadthing/route.js"
 }

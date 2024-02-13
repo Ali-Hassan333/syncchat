@@ -21,21 +21,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/dashboard/page.js"
     ],
-    "/auth-callback/page": [
+    "/dashboard/billing/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/auth-callback/page.js"
+      "static/chunks/app/dashboard/billing/page.js"
     ],
     "/dashboard/[fileid]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/dashboard/[fileid]/page.css",
       "static/chunks/app/dashboard/[fileid]/page.js"
-    ],
-    "/dashboard/billing/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/dashboard/billing/page.js"
     ]
   }
 }
